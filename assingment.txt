@@ -1,0 +1,6 @@
+1 - write a progam in c to display its process id and its parent id;
+2 - man fork to know about fork system call in linux (command);
+3 - lscpu for know about cpu information
+4 - lsb_release -a to know about operating system
+5 - uname -r to know the version of the kernel
+6 - ps -ef to know the status of all program
