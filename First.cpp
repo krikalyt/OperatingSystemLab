@@ -28,6 +28,5 @@ int main()
     }
 
     wait(0);
-    cout <<  getpid() << endl;
     return 0;
 }
