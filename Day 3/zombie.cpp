@@ -16,7 +16,7 @@ int main()
         cout << "Unable to make child process.." << endl;
     }
     else{
-        
+        while(true);
     }
     return 0;
 }
