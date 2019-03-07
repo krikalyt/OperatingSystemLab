@@ -11,10 +11,6 @@ int main()
     if(pid==0)
     {
         cout << "child pid is " << getpid() << endl;
-        // for(int i=0;i<30;i++){
-        //     cout << (i+1)<< endl;
-        //     this_thread::sleep_for(chrono::milliseconds(1000));
-        // }
         this_thread::sleep_for(chrono::milliseconds(10000));
         cout << "Krishna is Here " << endl;
         exit(0);
