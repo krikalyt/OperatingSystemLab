@@ -14,13 +14,13 @@ int main(void)
   {
     close(FDs[1]);
     dup2(FDs[0],0);
-    execl("/usr/bin/sort","/usr/bin/sort",0);
+    execl("/usr/bin/sort","/usr/bin/sort",NULL);
     exit(0);
   }
   else{
-    close[FDs[0]];
+    close(FDs[0]);
     dup2(FDs[1],1);
-    execl("/bin/ls","bin/ls","-l",0);
+    execl("/bin/ls","/bin/ls",NULL);
     wait(0);
   }
   return 0;
