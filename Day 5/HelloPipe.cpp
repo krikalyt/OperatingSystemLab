@@ -17,7 +17,7 @@ int main(void)
   }
   else{
     close(FDs[0]);
-    write(FDs[1],"Hello Krishna\n",13);
+    write(FDs[1],"/usr/bin/xterm",14);
     wait(NULL);
   }
   return 0;
