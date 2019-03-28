@@ -9,7 +9,7 @@
 int main(void)
 {
     int fd;
-    char* filename = "/home/reccc/Desktop/OperatingSystemLab/Day 6/krishna.txt";
+    char* filename = "/home/krishna/Desktop/OperatingSystemLab/Day 6/number2data";
     mkfifo(filename,0666);
     char arr[250];
     pid_t pid = fork();
@@ -23,7 +23,7 @@ int main(void)
     }else{
         fd = open(filename, O_WRONLY); 
         dup2(fd,1);
-        execl("/bin/ls","/bin/ls",NULL);
+        execl("/bin/ps","/bin/ps","-A",NULL);
         close(fd); 
         wait(0);
     }
